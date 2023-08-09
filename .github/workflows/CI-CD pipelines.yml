@@ -19,7 +19,7 @@ jobs:
           msbuild-version: 'latest'
 
       - name: Build application
-        working-directory: "./20231633 Jared Jonosky SLD FA2"
+        working-directory: "./20231633 Jared Jonosky SLD Formative"
         run: 'msbuild "20231633 Jared Jonosky SLD Formative.sln" /p:Configuration=Release'
 
   test:
@@ -36,7 +36,7 @@ jobs:
           msbuild-version: 'latest'
 
       - name: Build application
-        working-directory: "./20231633 Jared Jonosky SLD FA2"
+        working-directory: "./20231633 Jared Jonosky SLD Formative"
         run: 'msbuild "20231633 Jared Jonosky SLD Formative.sln" /p:Configuration=Release'
 
   deploy:
@@ -53,5 +53,5 @@ jobs:
           msbuild-version: 'latest'
 
       - name: Build application
-        working-directory: "./20231633 Jared Jonosky SLD FA2"
+        working-directory: "./20231633 Jared Jonosky SLD Formative"
         run: 'msbuild "20231633 Jared Jonosky SLD Formative.sln" /p:Configuration=Release'
