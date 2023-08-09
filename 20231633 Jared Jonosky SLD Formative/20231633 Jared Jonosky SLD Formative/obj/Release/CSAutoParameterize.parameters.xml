@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=&quot;|DataDirectory|\aspnet-20231633 Jared Jonosky SLD Formative-20230421010053.mdf&quot;;Initial Catalog=&quot;aspnet-20231633 Jared Jonosky SLD Formative-20230421010053&quot;;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\jared\\source\\repos\\20231633\ Jared\ Jonosky\ SLD\ Formative\\20231633\ Jared\ Jonosky\ SLD\ Formative\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>
