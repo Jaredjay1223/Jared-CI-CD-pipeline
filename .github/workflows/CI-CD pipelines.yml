@@ -55,3 +55,17 @@ jobs:
       - name: Build application
         working-directory: "./20231633 Jared Jonosky SLD Formative"
         run: 'msbuild "20231633 Jared Jonosky SLD Formative.sln" /p:Configuration=Release'
+    
+  notify:
+    name: Notify team on success
+    runs-on: windows-latest
+    needs: [build, test, deploy]
+
+    steps:
+      - name: Check for build, test, or deployment success
+        id: Check-status
+        run: echo "Build, test, and deployment successful!"
+
+      - name: Send notification on success
+        if: steps.build.outcome == 'success' && steps.test.outcome == 'success' && steps.deploy.outcome == 'success'
+        run: echo "Build, test, and deployment successful! Notify the team"
